@@ -69,8 +69,9 @@
 						<div class="product-googles-info googles">
 							<div class="men-pro-item">
 								<div class="men-thumb-item">
-									<img src="{{item.image.url}}" class="img-fluid" alt="">
-									<div class="men-cart-pro">
+									{% if item.image %}
+										<img src="{{ item.image.url }}" class="img-fluid" alt="">
+									{% endif %}									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="" class="link-product-add-cart">Quick View</a>
 										</div>
@@ -102,7 +103,7 @@
 						<div class="product-googles-info googles">
 							<div class="men-pro-item">
 								<div class="men-thumb-item">
-									<img src="{{field.image.url}}" class="img-fluid" alt="">
+									<img src="{{field.image.url}}" class="img-fluid" alt="" width="100px" height="150px">
 									<div class="men-cart-pro">
 										<div class="inner-men-cart-pro">
 											<a href="" class="link-product-add-cart">Quick View</a>
